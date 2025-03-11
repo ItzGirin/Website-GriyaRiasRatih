@@ -1,7 +1,7 @@
 /* Gaya Umum */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.5)), 
+    background: (to right, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.5)), 
     url('https://wbwp.s3.us-west-1.amazonaws.com/s3fs-public/inline-images/2-bride-holding-bouquet-and-long-veil-ed-peers-photography.jpg?VersionId=YB65Nc6HX4PjXiUZVtCoGyoQuILCQkgJ') 
     no-repeat center center/cover;
 }
@@ -99,15 +99,15 @@ body {
 }
 
 .card-header:hover {
-    background-color: #0056b3;
+    background-color: white;
     cursor: pointer;
 }
 
 .card-body {
-    background-color: #ffffff;
+    background-color: #0056b3;
     border-radius: 0 0 10px 10px;
     padding: 15px;
-    color: #343a40;
+    color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
