@@ -76,24 +76,34 @@ no-repeat center center/cover;
 /* Gaya Kartu FAQ */
 .card-header {
     background-color: #007bff;
-    color: white; /* Warna tulisan sudah diatur ke putih */
-    border-radius: 10px 10px 0 0;
+    color: white; /* Pastikan teks berwarna putih agar kontras */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Beri jarak antar header */
+    padding: 15px; /* Tambahkan padding agar lebih proporsional */
+    font-weight: bold;
+    text-align: center;
 }
 
+/* Tambahkan efek hover agar lebih interaktif */
+.card-header:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Body FAQ lebih rapi */
 .card-body {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     border-radius: 0 0 10px 10px;
+    padding: 15px;
+    color: #343a40; /* Pastikan teks terlihat jelas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Tambahkan warna putih untuk teks dalam body kartu */
-.card-body p,
-.card-body h2,
-.card-body h3,
-.card-body h4,
-.card-body h5,
-.card-body h6 {
-    color: white; /* Pastikan teks di dalam body kartu berwarna putih */
+/* Beri jarak antar kartu FAQ */
+.card {
+    margin-bottom: 15px; /* Jarak antar kartu */
 }
+
 
 /* Gaya Footer */
 footer {
