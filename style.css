@@ -1,154 +1,133 @@
-<!DOCTYPE html>
-<html lang="id">
+/* Gaya Umum */
+/* Gaya Umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://wbwp.s3.us-west-1.amazonaws.com/s3fs-public/inline-images/2-bride-holding-bouquet-and-long-veil-ed-peers-photography.jpg?VersionId=YB65Nc6HX4PjXiUZVtCoGyoQuILCQkgJ') 
+    no-repeat center center fixed;
+    background-size: cover;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Griya Rias Ratih</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS -->
-</head>
 
-<body>
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
 
-    <div class="container">
-        <div class="hero">
-            <h1>Griya Rias Ratih</h1>
-            <p>Sentuhan elegan untuk momen istimewa Anda</p>
-           
-            
-        </div>
+/* Gaya Hero */
+.hero {
+    text-align: center;
+    margin: 50px 0;
+    background: url('https://media-hosting.imagekit.io//b0b4b11cc259444b/background%20grr.jpg?Expires=1836268243&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jbBdsJkaFQiOL5JvpdLY47AufKSm6ez~57YLFRCfDQbKvtAAXgZKySIMB2l6p~LPejaCrUgRhe3g4AML-DZ9nBuWHVUyj~pkYipEkXuXqNodkWPaNAowkLLTZG2vu8WzaKMa-hHrNBT8fBxS9xq2ZYF2I~Bq6ioAABFUYyEalr4LfBjfTvpI3Ocd7vaPfR0Vdh~AepwOvH0b0Jj1gLG4P9M2eNkxD706g~4T~qLpRGpcDfwSKBHgQb9TYawAwNmzFCOtVB8emwqREcALUXfplkJYqQNkKRjSV2HohCkex6eY63fSWQzgLoAcvQrjLL58Znc2HVUiXZesDEmo-t3aig__') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
 
-        <div class="section">
-            <h2>Professional Makeup</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="https://media-hosting.imagekit.io//b64e5a2f53bd4a16/ba2719f5-d768-44b6-b21d-3d0aab36fd6a.png?Expires=1836124425&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=H788Qu-LhEwIIxuxlr4Rvpl7RR9rXPzKeKFvq10XmZd8ijX8Rl3ztFiDIK-Rf9tCC5QAPRQ7BSUDzb6TMNdN65MnNrHGywU1VygV9JIVe8DvA7B~7gz8Y4fbbOJ0~p8NH5AQTlIq-taNidzIax8PGfOP3hbAhv11m8nCqOfKqaojomYhc9OmPiJITGjv7qQQErq5MrTbP8G1SgkV3TLBt0b2G97qcBkH8G7LfOAaGOyymInWKg9lALmlZU-FVfGdVif0LeFj38qYF7HHRhAmj8GTyNTeutmBgMpAbgZTgV~mzTxTIW2mO1Vdlqhrx7puuY41unW3KdNUzvmidVFcyw__" class="img-fluid" alt="Professional Makeup">
-                </div>
-                <div class="col-md-6">
-                    <p>Griya Rias Ratih adalah layanan makeup artist profesional yang menghadirkan keindahan dalam setiap momen berharga Anda. Dari wisuda, lamaran, hingga pernikahan, kami memastikan setiap detail riasan mencerminkan pesona dan karakter Anda. Dengan penggunaan produk berkualitas tinggi dan teknik rias terkini, kami menciptakan tampilan yang elegan, flawless, dan tahan lama—membuat Anda tampil sempurna di hari istimewa.</p>
-                    <button class="btn btn-primary">Lihat Selengkapnya</button>
-                </div>
-            </div>
-        </div>
+/* Overlay untuk memastikan teks tetap terbaca */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Transparan hitam */
+    border-radius: 10px;
+}
 
-        <div class="section">
-            <h2>Layanan Berkualitas Tinggi</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Kami memahami bahwa kualitas membuat perbedaan yang signifikan pada hasil akhir riasan apa pun. Di Griya Rias Ratih, kami hanya menggunakan produk-produk terbaik yang dikenal akan daya tahan dan kinerjanya. Komitmen ini tidak hanya menjamin pemakaian yang tahan lama tetapi juga memastikan hasil akhir yang halus tanpa cacat. Setiap pilihan produk dipertimbangkan dengan saksama untuk melengkapi berbagai jenis dan warna kulit sehingga setiap klien menerima perawatan yang dipersonalisasi berdasarkan fitur unik mereka. Rasakan kemewahan kosmetik premium pada acara Anda berikutnya bersama kami.</p>
-                    <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://media-hosting.imagekit.io//cbf0062dd7b94127/c809e6cb0c27436798cc49e573ba3001%20(1).png?Expires=1836124425&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=kUKc3bVk8Xwej-tpZ1WNPveg1d1i4kP3o8tdzklwgxCRpUoYSE~6NFZXbkvVZ6-q3gF7EkDxElzZdeaEt-gQNPaWAtJQuqeZh7erurVF1FiHCZZ0scDZL76IZUu4WS5dFaa9bLG26AOnFg~-QyWXlSVEqeBZs6~rXu9An1sp7M-WmEga21oil-9fzRWaIME3kq5JcdEaRH1KUsdYWuKG5uT-Z78pA6kE9giyb-1fzohlInXNN4xDWipdyfBcOuXIxycQxF0NAR24cy1FHkt3i8dUv0NssdUFhy3YvR1C8YwK73PTs7hfyDCqcfT0XqUL1k0hU5cj~z9SgNZgbIn3Wg__" class="img-fluid" alt="Layanan Berkualitas">
-                </div>
-            </div>
-        </div>
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
 
-        <div class="section">
-            <h2>Tampilan yang Disesuaikan untuk Anda</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="https://media-hosting.imagekit.io//abb70b5fd6514e69/7c8dffed-5f2b-4b4e-a946-e0ab46156dc2.png?Expires=1836124425&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=m-6CRsOLNbz7UcYEUTQKkwG04OvjUK6M48HbzhszAFHhMMqdJ0PQPq4Fb9sFeNRhzvPx2sxIkbT1yafl-0dDMeNHxk8sly10lSJGPHcqkYnRuyCO-LVo13nmHA~jV-qnzxo~ElQ7-~GuHOa7bP3qC66AtE6cVrHdZuLGjYOxQOXIeS7ud9ytfPDLUWMxUe-uMIJhk6R9Zw4vx8avryn5VxEYXz04Ufb-bVZlid9PY93MnPt7uHBey9MdgtUO-Afnr~1949QUieXWAcYjJVZRX0wNxonvfjfJ571eFe0ztLBb4EfijlXzBlse4uWNrecCuNvv7BAAjMVaxeHK-9-JhQ__" class="img-fluid" alt="Tampilan yang Disesuaikan">
-                </div>
-                <div class="col-md-6">
-                    <p>Individualitas Anda dirayakan di Griya Rias Ratih melalui tampilan khusus yang dibuat khusus untuk Anda oleh para seniman berbakat kami. Kami meluangkan waktu selama konsultasi untuk memahami apa yang mendefinisikan preferensi gaya Anda, yang memungkinkan kami untuk menciptakan sentuhan khas yang selaras dengan siapa Anda sebagai pribadi dan bagaimana Anda ingin menampilkan diri pada hari-hari penting seperti pernikahan atau wisuda. Keahlian kami yang dipadukan dengan komunikasi yang jelas berarti Anda akan memperoleh hasil yang indah yang benar-benar 'Anda', memastikan kenyamanan di samping kemewahan.</p>
-                    <button class="btn btn-primary">Jadwalkan Sekarang</button>
-                </div>
-            </div>
-        </div>
+.hero p {
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
 
-        <div class="section">
-            <h2>Pertanyaan yang Sering Diajukan</h2>
-            <div class="faq">
-                <div class="card">
-                    <div class="card-header" id="faq1">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                Apa saja layanan yang kami tawarkan?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent=".faq">
-                        <div class="card-body">
-                            Kami menawarkan berbagai layanan makeup profesional, termasuk makeup untuk pernikahan, wisuda, dan acara khusus lainnya.
-                        </div>
-                    </div>
-                </div>
+.hero input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
-                <div class="card">
-                    <div class="card-header" id="faq2">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                Bagaimana cara melakukan reservasi?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent=".faq">
-                        <div class="card-body">
-                            Anda dapat melakukan reservasi melalui website kami atau menghubungi kami secara langsung.
-                        </div>
-                    </div>
-                </div>
+.hero button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-                <div class="card">
-                    <div class="card-header" id="faq3">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                Produk makeup apa yang kami gunakan?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent=".faq">
-                        <div class="card-body">
-                            Kami menggunakan produk berkualitas tinggi yang aman dan cocok untuk semua jenis kulit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+/* Gaya Section */
+.section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-        <div class="section">
-          <h2>GALERI 1</h2>
-          <div class="map">
-              <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.4606109749084!2d109.93227547632046!3d-7.7408682567970954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ac21b48cfa767%3A0xb3810533792fc23d!2sGriya%20Rias%20Ratih%20Bu%20Sri%20Agus!5e0!3m2!1sid!2sid!4v1741543123927!5m2!1sid!2sid"
-                  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-      </div>
-      
-      <div class="section">
-          <h2>GALERI 2</h2>
-          <div class="map">
-              <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.89756359818!2d109.89689678715821!3d-7.712693999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ac170dfa5819f%3A0x9470bbee76c06313!2sGriya%20Rias%20Ratih%20-%20Galeri%202!5e0!3m2!1sen!2sus!4v1741542905231!5m2!1sen!2sus"
-                  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-      </div>
-      
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Footer Section -->
-    <footer class="text-center py-4">
-      <div class="container">
-          <h3>Ubah Kecantikan Anda Dalam Sekejab</h3>
-          <p>Nikmati hari istimewa Anda dan kunjungi kami untuk mendapatkan layanan tata rias profesional. Pesan janji temu Anda sekarang untuk mendapatkan penampilan sempurna di hari istimewa Anda!</p>
-          <a href="#" class="btn btn-primary">Buat Janji Temu</a>
-          <p>&copy; 1983 - 2025 Griya Rias Ratih. All rights reserved.</p>
-        </p>
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
-        
-        <div class="social-icons mt-3">
-            <a href="https://wa.me/08113531005" target="_blank" aria-label="WhatsApp">
-                <img src="https://media-hosting.imagekit.io//35981f76eddb4760/image-removebg-preview%20(1).png?Expires=1836271641&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Tml98sMRFndUthK3KtjlwuSarM70QaV0PsyP9UbwGIiwzxdX6dW67pH4hSXHvyxsoXsEblPyNXiQsY3a6WumZd1vcFEZIgaVMJZ2FfxWP14eax68zznv5U~EWDXHooBZidXydFFez~yXpRQa~dFqP93iBYOb0WrHvm6VXeT-PcRZ8U4-jjmkXmm1rdAiDFXl3TBuhFZIPYnGDJayGD3o8Qrh8ngLuBExL2emdiCn6qqyL2-BnjXWYDfe2KVEFVDeh6ik1yynZc4f5occlUwCmtQbF1QiFOm4bs6tbJ5uCgDrR4jt~ywn0-8vnKGTCm5yfAKqkjzRcf6DPjewy1OUVg__" alt="WhatsApp" width="30" height="30">
-            </a>
-            <a href="https://www.instagram.com/grr_griyariasratih" target="_blank" aria-label="Instagram">
-                <img src="https://media-hosting.imagekit.io//52121c47485447d0/image-removebg-preview.png?Expires=1836271641&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=HYRg-lDOepArwV6~nL5UQRh7GBRNM16sCtjP5dKjuZAr4DuHDtQ~kl~yf5X~-cSF3yydk-fFBWKnM~73qqTHwNiIh~O7Ws9gEgl4SS3fAQhzBFOSqiUQzPYMJveoDLVyp6mXd1-xmCNxkK0fant3HIfwEnmLXOIGhTwgxsFtzRtmvofi5zWf-2VWB280bjgDLP9GdyYE6NzlBOVXME3yP~rvU--2SXiANGVLWIGT7zoCBfJ~L6LzkMljMpH8ZtRdE2hlrH5xMB8xZV27SWDit9zQZXUYHbfBAiUpo46lCjGX~4ebJUq8lWbCaihT8BKiPDesekmp~YK90BokMHcq-g__" alt="Instagram" width="30" height="30">
-            </a>
-        </div>
-    </div>
-    <div class="mt-4">
-   
-    </div>
-  </footer>
+/* Gaya Gambar */
+.img-fluid {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* Gaya Kartu FAQ */
+.card-header {
+    background-color: white;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-header:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.card-body {
+    background-color: #0056b3;
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+/* Gaya Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
