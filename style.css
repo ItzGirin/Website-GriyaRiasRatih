@@ -1,9 +1,9 @@
 /* Gaya Umum */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
-    line-height: 1.6;
+background: linear-gradient(to right, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.5)), 
+url('https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22background%20grr.jpg%22%2C%22type%22%3A%22image%2Fjpeg%22%2C%22signedurl_expire%22%3A%222028-03-10T02%3A30%3A42.909Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F%2Fb0b4b11cc259444b%2Fbackground%2520grr.jpg%3FExpires%3D1836268243%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3DjbBdsJkaFQiOL5JvpdLY47AufKSm6ez~57YLFRCfDQbKvtAAXgZKySIMB2l6p~LPejaCrUgRhe3g4AML-DZ9nBuWHVUyj~pkYipEkXuXqNodkWPaNAowkLLTZG2vu8WzaKMa-hHrNBT8fBxS9xq2ZYF2I~Bq6ioAABFUYyEalr4LfBjfTvpI3Ocd7vaPfR0Vdh~AepwOvH0b0Jj1gLG4P9M2eNkxD706g~4T~qLpRGpcDfwSKBHgQb9TYawAwNmzFCOtVB8emwqREcALUXfplkJYqQNkKRjSV2HohCkex6eY63fSWQzgLoAcvQrjLL58Znc2HVUiXZesDEmo-t3aig__%22%7D') 
+no-repeat center center/cover;
 }
 
 .container {
