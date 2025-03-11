@@ -1,9 +1,9 @@
 /* Gaya Umum */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background: linear-gradient(to right, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.5)), 
-url('https://media-hosting.imagekit.io//b0b4b11cc259444b/background%20grr.jpg?Expires=1836268243&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jbBdsJkaFQiOL5JvpdLY47AufKSm6ez~57YLFRCfDQbKvtAAXgZKySIMB2l6p~LPejaCrUgRhe3g4AML-DZ9nBuWHVUyj~pkYipEkXuXqNodkWPaNAowkLLTZG2vu8WzaKMa-hHrNBT8fBxS9xq2ZYF2I~Bq6ioAABFUYyEalr4LfBjfTvpI3Ocd7vaPfR0Vdh~AepwOvH0b0Jj1gLG4P9M2eNkxD706g~4T~qLpRGpcDfwSKBHgQb9TYawAwNmzFCOtVB8emwqREcALUXfplkJYqQNkKRjSV2HohCkex6eY63fSWQzgLoAcvQrjLL58Znc2HVUiXZesDEmo-t3aig__') 
-no-repeat center center/cover;
+    background: linear-gradient(to right, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.5)), 
+    url('https://media-hosting.imagekit.io//b0b4b11cc259444b/background%20grr.jpg?Expires=1836268243&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jbBdsJkaFQiOL5JvpdLY47AufKSm6ez~57YLFRCfDQbKvtAAXgZKySIMB2l6p~LPejaCrUgRhe3g4AML-DZ9nBuWHVUyj~pkYipEkXuXqNodkWPaNAowkLLTZG2vu8WzaKMa-hHrNBT8fBxS9xq2ZYF2I~Bq6ioAABFUYyEalr4LfBjfTvpI3Ocd7vaPfR0Vdh~AepwOvH0b0Jj1gLG4P9M2eNkxD706g~4T~qLpRGpcDfwSKBHgQb9TYawAwNmzFCOtVB8emwqREcALUXfplkJYqQNkKRjSV2HohCkex6eY63fSWQzgLoAcvQrjLL58Znc2HVUiXZesDEmo-t3aig__') 
+    no-repeat center center/cover;
 }
 
 .container {
@@ -16,20 +16,34 @@ no-repeat center center/cover;
 .hero {
     text-align: center;
     margin: 50px 0;
-    background: linear-gradient(to right, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.5)), url('https://example.com/your-background-image.jpg') no-repeat center center/cover;
+    background: url('URL_FOTOMU') no-repeat center center/cover;
+    position: relative;
     color: white;
     padding: 60px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Overlay untuk memastikan teks tetap terbaca */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Transparan hitam */
+    border-radius: 10px;
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero p {
     font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero input[type="email"] {
@@ -76,34 +90,30 @@ no-repeat center center/cover;
 /* Gaya Kartu FAQ */
 .card-header {
     background-color: #007bff;
-    color: white; /* Pastikan teks berwarna putih agar kontras */
+    color: white;
     border-radius: 10px;
-    margin-bottom: 10px; /* Beri jarak antar header */
-    padding: 15px; /* Tambahkan padding agar lebih proporsional */
+    margin-bottom: 10px;
+    padding: 15px;
     font-weight: bold;
     text-align: center;
 }
 
-/* Tambahkan efek hover agar lebih interaktif */
 .card-header:hover {
     background-color: #0056b3;
     cursor: pointer;
 }
 
-/* Body FAQ lebih rapi */
 .card-body {
     background-color: #ffffff;
     border-radius: 0 0 10px 10px;
     padding: 15px;
-    color: #343a40; /* Pastikan teks terlihat jelas */
+    color: #343a40;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Beri jarak antar kartu FAQ */
 .card {
-    margin-bottom: 15px; /* Jarak antar kartu */
+    margin-bottom: 15px;
 }
-
 
 /* Gaya Footer */
 footer {
