@@ -74,22 +74,25 @@ body {
 }
 
 /* Gaya Kartu FAQ */
-.card {
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 .card-header {
     background-color: #007bff;
-    color: white;
+    color: white; /* Warna tulisan sudah diatur ke putih */
     border-radius: 10px 10px 0 0;
 }
 
 .card-body {
     background-color: #f8f9fa;
     border-radius: 0 0 10px 10px;
+}
+
+/* Tambahkan warna putih untuk teks dalam body kartu */
+.card-body p,
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6 {
+    color: white; /* Pastikan teks di dalam body kartu berwarna putih */
 }
 
 /* Gaya Footer */
