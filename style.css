@@ -1,12 +1,10 @@
 /* Gaya Umum */
-/* Gaya Umum */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('https://wbwp.s3.us-west-1.amazonaws.com/s3fs-public/inline-images/2-bride-holding-bouquet-and-long-veil-ed-peers-photography.jpg?VersionId=YB65Nc6HX4PjXiUZVtCoGyoQuILCQkgJ') 
+    background: url('https://media-hosting.imagekit.io//e2ebbac9210d4754/02b9e120-5aca-4eb6-a9df-7a97d73aa42d.jpeg?Expires=1836354567&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ofhzgTh3YGbAPtDNYRPi1oPDpTFP2AqEs~22vqLFHjIQExSwK4Y~0lWmbFlnLvomZmQsXyJZCd4V1vV9GpokbphQEIGM8l2-md5v3umglgxmfG5yK03zsNM42I9Xnxjz6mxqcpw4BNlSSdfX~O-pcG7IBKE~Hdzq30Qh7D~1x2f3qfR6SaITPUQq-KjJSkB-VoobqivMN0hV4csInOKvK~Cy2jUU8gcGrWwVcSB93IM8BGVI8UFhAM-q7LB0eDm2YQomqR87GbBx5kHJ7wY6NUxb76a80xMhfarZhTpBhfH4fq3re-WGOV2YQmxFNv2qGMEd7-vVGKe59v7KxWnwCA__') 
     no-repeat center center fixed;
     background-size: cover;
 }
-
 
 .container {
     max-width: 1200px;
@@ -40,12 +38,14 @@ body {
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .hero p {
     font-size: 1.2rem;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .hero input[type="email"] {
@@ -77,6 +77,17 @@ body {
 .section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: left;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
 }
 
 /* Gaya Gambar */
