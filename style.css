@@ -1,110 +1,140 @@
-/* --- Animasi Loading Screen Mewah --- */
+/* --- 🔥 Style Loading Screen 🔥 --- */
 #loading-screen {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #000000, #222222);
+    background: linear-gradient(to bottom, #000, #222); /* Warna elegan */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     z-index: 9999;
-    opacity: 1;
-    transform: scale(1.1);
-    animation: fadeInScale 1.5s ease-out forwards;
+    transition: opacity 1s ease-in-out;
 }
 
-/* --- Efek Muncul Loading Screen --- */
-@keyframes fadeInScale {
-    0% { opacity: 0; transform: scale(1.2); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-/* --- Animasi Glowing Logo Elegan --- */
+/* --- Animasi Logo --- */
 .loader img {
-    width: 150px;
-    animation: bounceGlow 3s infinite ease-in-out;
-    filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.8));
+    width: 120px;
+    animation: fadeInZoom 2s ease-in-out infinite alternate;
 }
 
-@keyframes bounceGlow {
-    0%, 100% { transform: translateY(0); filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.8)); }
-    50% { transform: translateY(-8px); filter: drop-shadow(0px 0px 15px rgba(255, 140, 0, 1)); }
+/* --- Efek Fade-in & Zoom --- */
+@keyframes fadeInZoom {
+    0% { opacity: 0.7; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1.1); }
 }
 
-/* --- Efek Mengetik (Typing Effect) --- */
-.typing-text {
-    color: white; /* Warna putih agar terlihat jelas */
-    font-size: 24px;
+/* --- Teks Loading --- */
+.loader p {
+    color: #fff;
+    font-size: 22px;
     font-family: 'Playfair Display', serif;
+    margin-top: 10px;
     text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #FFD700;
-    width: 0;
-    animation: typing 2s steps(30, end) forwards, blink 0.7s infinite;
+    animation: glowText 2s ease-in-out infinite alternate;
 }
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+/* --- Efek Cahaya pada Teks --- */
+@keyframes glowText {
+    0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+    100% { text-shadow: 0 0 20px rgba(255, 215, 0, 1); }
 }
 
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
-/* --- Tombol "Masuk" Mewah dengan Efek Gradient Glow --- */
+/* --- Tombol "Masuk" --- */
 #enter-btn {
     background: linear-gradient(45deg, #FFD700, #FF8C00);
     border: none;
-    padding: 12px 30px;
-    font-size: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
     color: #000;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     margin-top: 20px;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 0px 0px 10px rgba(255, 140, 0, 0.7);
-    opacity: 0;
-    animation: fadeInButton 1.5s ease-in-out forwards 1s;
+    transition: all 0.3s ease-in-out;
 }
 
-@keyframes fadeInButton {
-    0% { opacity: 0; transform: scale(0.8); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
+/* --- Efek Hover --- */
 #enter-btn:hover {
-    background: linear-gradient(45deg, #FF8C00, #FFD700);
-    box-shadow: 0px 0px 20px rgba(255, 140, 0, 1);
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-/* --- Efek Keluar Loading Screen (Soft Fade Out) --- */
+/* --- Animasi Hilang (Fade Out) --- */
 .fade-out {
-    animation: fadeOut 1.5s ease-out forwards;
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; transform: scale(1); }
-    100% { opacity: 0; transform: scale(0.9); display: none; }
-}
-
-/* --- Efek Masuk Halaman Utama --- */
-.content {
     opacity: 0;
-    transform: translateY(30px);
-    animation: slideIn 1.5s ease-out forwards 1.5s;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    visibility: hidden;
 }
 
-@keyframes slideIn {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
+/* Spinner for loading screen */
+.spinner {
+    margin: 15px auto 10px auto;
+    width: 40px;
+    height: 40px;
+    border: 5px solid rgba(255, 215, 0, 0.3);
+    border-top: 5px solid #FFD700;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
 }
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Additional improvements for hero section */
+.hero {
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FAQ button icon improvements */
+.btn-link::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.btn-link.collapsed::after {
+    transform: rotate(-90deg);
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+    background: #FFC107;
+}
 
 
 
@@ -243,6 +273,31 @@ footer {
     background-color: #343a40;
     color: white;
     padding: 20px 0;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .section h2 {
+        font-size: 1.8rem;
+    }
+    .section p {
+        font-size: 1rem;
+        min-height: auto;
+    }
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 footer a {
