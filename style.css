@@ -6,7 +6,7 @@
     background: linear-gradient(to bottom, #000, #222); /* Warna elegan */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     flex-direction: column;
     z-index: 9999;
     transition: opacity 1s ease-in-out;
@@ -19,7 +19,20 @@
     width: 120px;
     max-width: 80vw; /* Responsive max width */
     height: auto;
-    animation: fadeInZoom 2s ease-in-out infinite alternate;
+    animation: fadeInZoom 2s ease-in-out infinite alternate, glow 2s ease-in-out infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px #FFD700);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #FFD700);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px #FFD700);
+    }
 }
 
 /* --- Efek Fade-in & Zoom --- */
@@ -155,7 +168,7 @@ body {
 .hero {
     text-align: center;
     margin: 50px 0;
-    background: url('https://media-hosting.imagekit.io//b0b4b11cc259444b/background%20grr.jpg?Expires=1836268243&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jbBdsJkaFQiOL5JvpdLY47AufKSm6ez~57YLFRCfDQbKvtAAXgZKySIMB2l6p~LPejaCrUgRhe3g4AML-DZ9nBuWHVUyj~pkYipEkXuXqNodkWPaNAowkLLTZG2vu8WzaKMa-hHrNBT8fBxS9xq2ZYF2I~Bq6ioAABFUYyEalr4LfBjfTvpI3Ocd7vaPfR0Vdh~AepwOvH0b0Jj1gLG4P9M2eNkxD706g~4T~qLpRGpcDfwSKBHgQb9TYawAwNmzFCOtVB8emwqREcALUXfplkJYqQNkKRjSV2HohCkex6eY63fSWQzgLoAcvQrjLL58Znc2HVUiXZesDEmo-t3aig__') no-repeat center center/cover;
+    background: url('background grr.jpg') no-repeat center center/cover;
     position: relative;
     color: white;
     padding: 60px 20px;
